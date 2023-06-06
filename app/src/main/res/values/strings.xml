@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GezegenPro</string>
+    <string name="weightTittle">GEZEGENLERDE KAÇ KİLOSUN ?</string>
+    <string name="weight">Kilonuz :</string>
+    <string name="weightTittleLand">GEZEGENLERDE KAÇ KİLOSUN ?</string>
+    <string name="weightLand">Kilonuz :</string>
+</resources>

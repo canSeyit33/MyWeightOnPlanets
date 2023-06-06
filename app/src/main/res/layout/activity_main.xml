@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/idTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/weightTittleLand"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/boxJupiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/idJupiter"
+        app:layout_constraintStart_toStartOf="@+id/idJupiter"
+        app:layout_constraintTop_toTopOf="@+id/boxMars" />
+
+    <CheckBox
+        android:id="@+id/boxVenus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/idVenus"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/idVenus"
+        app:layout_constraintTop_toTopOf="@+id/boxJupiter" />
+
+    <ImageView
+        android:id="@+id/idJupiter"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        app:layout_constraintEnd_toStartOf="@+id/idVenus"
+        app:layout_constraintStart_toEndOf="@+id/idMars"
+        app:layout_constraintTop_toTopOf="@+id/idMars"
+        app:srcCompat="@mipmap/jupiter" />
+
+    <ImageView
+        android:id="@+id/idVenus"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idMars"
+        app:srcCompat="@mipmap/venus" />
+
+    <ImageView
+        android:id="@+id/idMars"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTittle"
+        app:srcCompat="@mipmap/mars" />
+
+    <CheckBox
+        android:id="@+id/boxMars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/idMars"
+        app:layout_constraintStart_toStartOf="@+id/idMars"
+        app:layout_constraintTop_toBottomOf="@+id/idMars" />
+
+    <EditText
+        android:id="@+id/idKilo"
+        android:layout_width="176dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="@string/weightLand"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boxMars" />
+
+    <TextView
+        android:id="@+id/idSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idKilo" />
+
+</android.support.constraint.ConstraintLayout>
